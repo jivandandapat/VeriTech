@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.heading h1 {
+    text-align: center;
+    margin-top: 50px;
+    background-color: aqua;
+    width: 100%;
+    padding: 0.6rem 3rem;
+}
+
+.heading p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.team-section {
+    width: 100%;
+}
+
+.team-section .container {
+    width: 80%;
+    margin: auto;
+}
+
+.team-section .container .row {
+    width: 60%;
+    margin: auto;
+}
+
+.team-section .container .title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-section .container .title h2 {
+    margin-top: 30px;
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    background: green;
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+}
+
+.team-section .container .title h3 {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    margin-top: 50px;
+}
+
+.team-section .container .title h3 span {
+    background: green;
+    color: #fff;
+    display: inline-block;
+    padding: 0.7rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.team-section .container .team-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.team-section .container .team-card2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+/* .team-section .container .team-card  */
+.card {
+    text-align: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/* .team-section .container .team-card  */
+.card .image-section {
+    clip-path: circle(70% at 75% 70%);
+    margin-right: 70px;
+    width: 130px;
+    height: 130px;
+
+
+}
+
+.team-section .container .team-card .card:hover {
+    background-color: #f3f3f3;
+    box-shadow: 1px 1px 10px 4px rgb(151, 231, 151);
+    transition: 0.3s;
+}
+
+.team-section .container .team-card2 .card:hover {
+    background-color: #f3f3f3;
+    box-shadow: 1px 1px 10px 4px rgb(151, 231, 151);
+    transition: 0.3s;
+}
+
+.content h3 {
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+
+.content h4 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.content p {
+    font-size: 14px;
+}
+
+.social-media-links {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-section .container .team-card2 .card .social-media-links {
+    width: 125px;
+    margin-left: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-panel4 {
+    background-color: #436161;
+    color: #fff;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pages {
+    padding-top: 25px;
+}
+
+.copyright {
+    padding-top: 5px;
+}
+
+
+
+/* responive for different screen */
+
+@media only screen and (max-width: 1200px) {
+    .team-section .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .team-section .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .team-section .container .team-card,
+    .team-section .container .team-card2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .team-section .container .team-card,
+    .team-section .container .team-card2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .heading h1 {
+        font-size: 20px;
+    }
+
+    .heading p {
+        font-size: 12px;
+    }
+
+    .team-section .container .title h2,
+    .team-section .container .title h3 {
+        padding: 1rem;
+    }
+
+    .team-section .container .team-card,
+    .team-section .container .team-card2 {
+        grid-gap: 20px;
+    }
+
+    .card .image-section {
+        margin-right: 0;
+    }
+
+    .social-media-links {
+        margin-left: 0;
+    }
+}
