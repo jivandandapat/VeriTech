@@ -10,7 +10,7 @@
 .heading h1 {
     text-align: center;
     margin-top: 50px;
-    background-color: aqua;
+    background-color: #00ffff;
     width: 100%;
     padding: 0.6rem 3rem;
 }
@@ -45,7 +45,7 @@
     text-align: center;
     padding: 2rem 0;
     padding-bottom: 3rem;
-    background: green;
+    background: #008000;
     color: #fff;
     display: inline-block;
     padding: 0.5rem 3rem;
@@ -60,7 +60,7 @@
 }
 
 .team-section .container .title h3 span {
-    background: green;
+    background: #008000;
     color: #fff;
     display: inline-block;
     padding: 0.7rem 3rem;
@@ -83,7 +83,6 @@
     margin-top: 50px;
 }
 
-/* .team-section .container .team-card  */
 .card {
     text-align: center;
     width: 100%;
@@ -98,30 +97,33 @@
     cursor: pointer;
 }
 
-/* .team-section .container .team-card  */
 .card .image-section {
-    clip-path: circle(70% at 75% 70%);
-    margin-right: 70px;
+    /*clip-path: circle(70% at 75% 70%);*/
+    border-radius: 50px;
     width: 130px;
     height: 130px;
+}
 
-
+.card .image-section>img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
 }
 
 .team-section .container .team-card .card:hover {
     background-color: #f3f3f3;
-    box-shadow: 1px 1px 10px 4px rgb(151, 231, 151);
+    box-shadow: 1px 1px 10px 4px rgb(96, 99, 96);
     transition: 0.3s;
 }
 
 .team-section .container .team-card2 .card:hover {
     background-color: #f3f3f3;
-    box-shadow: 1px 1px 10px 4px rgb(151, 231, 151);
+    box-shadow: 1px 1px 10px 4px rgb(96, 99, 96);
     transition: 0.3s;
 }
 
 .content h3 {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
@@ -134,19 +136,21 @@
 }
 
 .social-media-links {
-    margin-left: 50px;
     margin-top: 10px;
-    width: 125px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.social-media-links>a{
+    margin-left:5px;
+    margin-right: 5px;
 }
 
 .team-section .container .team-card2 .card .social-media-links {
-    width: 125px;
-    margin-left: 100px;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .foot-panel4 {
